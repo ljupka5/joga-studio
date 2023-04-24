@@ -1,0 +1,307 @@
+/* ************************* */
+/* MEDIA QUERIES */
+/* ************************* */
+
+/* ************************ */
+/* Below 1360px */
+
+@media (max-width: 85em) {
+  .testimonial-card {
+    height: 22rem;
+  }
+}
+
+/* ************************ */
+/* Below 1255px */
+
+@media (max-width: 78em) {
+  .primary-header {
+    font-size: 5.2rem;
+  }
+
+  .testimonials-container {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .testimonial-card {
+    height: 20rem;
+  }
+
+  .teachers-container {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .cta-container {
+    gap: 6.4rem;
+  }
+
+  .name,
+  .email {
+    width: 35rem;
+  }
+}
+
+/* ************************ */
+/* Below 1120px */
+
+@media (max-width: 70em) {
+  html {
+    font-size: 56.25%;
+  }
+
+  .benefits-info {
+    width: 90%;
+  }
+
+  .cta-container {
+    grid-template-columns: 1fr;
+  }
+
+  .cta-img {
+    width: 70%;
+  }
+
+  .name,
+  .email {
+    width: 40rem;
+  }
+}
+
+/* ************************ */
+/* Below 900px */
+@media (max-width: 56em) {
+  .nav-list {
+    gap: 3.2rem;
+  }
+
+  .nav-list a {
+    font-size: 1.6rem;
+  }
+
+  .about-text {
+    width: 100%;
+  }
+
+  .benefits-info {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    align-items: center;
+    justify-content: center;
+  }
+
+  .box-1,
+  .box-2 {
+    margin-bottom: 3.2rem;
+  }
+
+  .box-1 {
+    grid-column: 1/3;
+    grid-row: 1/2;
+  }
+
+  .box-2 {
+    grid-column: 3 /5;
+    grid-row: 1 /2;
+  }
+
+  .box-3 {
+    grid-column: 2 /4;
+    grid-row: 2/3;
+  }
+
+  .box-4 {
+    grid-column: 4/5;
+    grid-row: 2/3;
+  }
+
+  .classes-container {
+    grid-template-columns: 1fr;
+  }
+
+  .testimonial-card {
+    height: 22rem;
+  }
+}
+
+/* ************************ */
+/* Below 760px */
+@media (max-width: 47.5em) {
+  html {
+    font-size: 50%;
+  }
+
+  /* MOBILE NAVIGATION */
+
+  .btn-mobile-nav {
+    display: block;
+    z-index: 9999;
+  }
+
+  .main-nav {
+    background-color: #286056;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    transform: translateX(100%);
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: all 0.5s ease-in-out;
+
+    /* 1. Hide the element visually */
+    opacity: 0;
+    /* 2. Make it unaccessible to mouse and keyboard */
+    pointer-events: none;
+    /* 3. Hide it from screen readers */
+    visibility: hidden;
+    z-index: 10;
+  }
+
+  /* To have it shown later use the values below */
+  .nav-open .main-nav {
+    opacity: 1;
+    pointer-events: auto;
+    visibility: visible;
+    transform: translateX(0);
+  }
+
+  .nav-open .icon-mobile-nav[name="close-outline"] {
+    display: block;
+  }
+
+  .nav-open .icon-mobile-nav[name="menu-outline"] {
+    display: none;
+  }
+
+  .nav-list {
+    flex-direction: column;
+    gap: 4.8rem;
+  }
+
+  .nav-link:link,
+  .nav-link:visited {
+    font-size: 3rem;
+  }
+
+  .about-container {
+    grid-template-columns: 1fr;
+  }
+
+  .benefits-box {
+    gap: 0.8rem;
+  }
+
+  .testimonials-container {
+    grid-template-columns: 1fr;
+  }
+
+  .testimonial-card {
+    margin: 0 auto;
+    width: 70%;
+    height: 20rem;
+  }
+
+  .teachers-container {
+    grid-template-columns: 1fr;
+  }
+
+  .teachers-box {
+    margin: 0 auto;
+    width: 80%;
+  }
+}
+
+/* ************************ */
+/* Below 650px */
+@media (max-width: 41em) {
+  .section-header {
+    font-size: 4rem;
+  }
+
+  .hero-section {
+    padding: 3rem 6rem;
+  }
+
+  .benefits-icon {
+    width: 2.4rem;
+    height: 2.4rem;
+  }
+
+  .benefits-text {
+    font-size: 1.2rem;
+  }
+
+  .cta-img {
+    width: 80%;
+  }
+}
+
+/* ************************ */
+/* Below 540px */
+@media (max-width: 34em) {
+  html {
+    font-size: 43.75%;
+  }
+  .section-header {
+    font-size: 3.2rem;
+  }
+  .about-container {
+    margin-bottom: 0;
+  }
+  .benefits-box {
+    gap: 0;
+  }
+
+  .primary-header {
+    font-size: 4.8rem;
+  }
+  .box-front {
+    font-size: 1.8rem;
+  }
+
+  .testimonial-card {
+    width: 80%;
+  }
+
+  .cta-img {
+    width: 90%;
+  }
+
+  .name,
+  .email {
+    width: 35rem;
+  }
+}
+
+/* ************************ */
+/* Below 460px */
+@media (max-width: 27em) {
+  .about-section,
+  .classes-section,
+  .testimonial-section,
+  .teachers-section,
+  .cta-section {
+    padding: 8rem 6.4rem;
+  }
+
+  .section-name {
+    font-size: 1.6rem;
+  }
+
+  .section-header,
+  .footer-text {
+    font-size: 2.8rem;
+  }
+
+  .testimonial-card {
+    width: 90%;
+    height: 22rem;
+  }
+
+  .footer {
+    padding: 4.8rem 6.4rem;
+  }
+}
