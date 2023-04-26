@@ -1,0 +1,642 @@
+/* ************************* */
+/* GENERAL */
+/* ************************* */
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  list-style-type: none;
+  text-decoration: none;
+  font-family: "Libre Franklin", sans-serif;
+  font-weight: 400;
+  scroll-behavior: smooth;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+.social-list {
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+}
+
+.social-icon {
+  width: 2.4rem;
+  height: 2.4rem;
+  color: #f2f2f2;
+  transition: all 0.3s;
+}
+
+.social-icon:hover {
+  color: #50bfab;
+}
+
+.section-name {
+  font-size: 1.8rem;
+  letter-spacing: 0.1rem;
+  text-transform: uppercase;
+  color: #303030;
+}
+
+.section-header {
+  font-family: "Prata", serif;
+  font-size: 5.2rem;
+  letter-spacing: 0.2rem;
+  color: #4d4373;
+}
+
+/* ************************* */
+/* HEADER */
+/* ************************* */
+.header {
+  width: 100vw;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: #286056;
+
+  padding: 2rem 4rem;
+}
+
+.logo {
+  width: 5rem;
+}
+
+.nav-list {
+  display: flex;
+  align-items: center;
+  gap: 4rem;
+}
+
+.nav-list a {
+  font-size: 1.8rem;
+  font-weight: 600;
+  color: #f2f2f2;
+  cursor: pointer;
+  transition: all 0.3s;
+}
+
+.nav-list a:hover {
+  color: #cac7d5;
+  border-bottom: 0.2rem solid #cac7d5;
+}
+
+/* MOBILE */
+.btn-mobile-nav {
+  border: none;
+  background-color: transparent;
+  cursor: pointer;
+
+  display: none;
+}
+
+.icon-mobile-nav {
+  height: 4.8rem;
+  width: 4.8rem;
+  color: #f2f2f2;
+}
+
+.icon-mobile-nav[name="close-outline"] {
+  display: none;
+}
+
+/* ************************* */
+/* HERO SECTION */
+/* ************************* */
+.hero-section {
+  background: url(images/yoga3.jpg) no-repeat center;
+  background-size: cover;
+  width: 100vw;
+  height: 100vh;
+
+  padding: 6rem 12rem;
+
+  position: relative;
+}
+
+.hero-textbox {
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+}
+
+.primary-header {
+  width: 60%;
+  font-family: "Prata", serif;
+  font-size: 6.2rem;
+  letter-spacing: 0.4rem;
+  line-height: 1.4;
+  color: #f2f2f2;
+}
+
+.cta-btn {
+  font-size: 2rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  color: #f2f2f2;
+  background-color: transparent;
+  border: none;
+  border-radius: 1rem;
+  box-shadow: inset 0 0 0 0.2rem #f2f2f2;
+
+  position: absolute;
+  left: 10%;
+  top: 80%;
+
+  padding: 1.6rem 3.2rem;
+  cursor: pointer;
+  transition: all 0.3s;
+}
+
+.cta-btn:hover {
+  background-color: #286056;
+  box-shadow: none;
+}
+
+/* ************************* */
+/* ABOUT SECTION */
+/* ************************* */
+.about-section {
+  width: 100vw;
+  display: flex;
+  flex-direction: column;
+  gap: 4.8rem;
+  align-items: start;
+
+  background-color: #cac7d5;
+  padding: 9.6rem 8rem;
+}
+
+.about-container {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  align-items: center;
+  gap: 6.4rem;
+  align-self: center;
+  margin-bottom: 6.4rem;
+}
+
+.about-textbox {
+  display: flex;
+  flex-direction: column;
+  gap: 3.2rem;
+}
+
+.about-text {
+  width: 80%;
+  font-size: 1.8rem;
+  color: #616161;
+  line-height: 1.5;
+}
+
+.about-img {
+  width: 100%;
+  background-position: center;
+}
+
+.benefits-info {
+  width: 80%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin: 0 auto;
+}
+
+.benefits-box {
+  display: flex;
+  align-items: center;
+  gap: 1.2rem;
+}
+
+.benefits-icon {
+  width: 3rem;
+  height: 3rem;
+  color: #616161;
+}
+
+.benefits-text {
+  font-size: 1.6rem;
+
+  text-transform: uppercase;
+  letter-spacing: 0.05rem;
+  color: #4d4373;
+}
+
+/* ************************* */
+/* CLASSES SECTION */
+/* ************************* */
+
+.classes-section {
+  width: 100vw;
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  gap: 4.8rem;
+
+  background-color: #f2f2f2;
+
+  padding: 9.6rem 8rem;
+}
+
+.classes-container {
+  width: 100%;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  align-items: center;
+  gap: 8rem;
+}
+
+.class-box {
+  width: 100%;
+  height: 40rem;
+
+  position: relative;
+  box-shadow: 0.5rem 0.5rem 1rem #616161;
+  transition: all 0.8s;
+}
+
+.class-box:hover {
+  transform: rotateY(180deg);
+  box-shadow: -0.5rem 0.5rem 1rem #616161;
+}
+
+.class-box:hover .box-back {
+  visibility: visible;
+  transform: rotateY(180deg);
+}
+
+.vinyasa {
+  background-image: url(images/vinyasayoga.jpg);
+  background-size: cover;
+}
+
+.prenatal {
+  background-image: url(images/prenatalyoga.jpg);
+  background-size: cover;
+}
+
+.hatha {
+  background-image: url(images/hathayoga.jpg);
+  background-size: cover;
+}
+.kundalini {
+  background-image: url(images/kundaliniyoga.jpg);
+  background-size: cover;
+}
+
+.box-front {
+  font-family: "Prata", serif;
+  font-size: 2.4rem;
+  color: #4d4373;
+  background-color: rgba(242, 242, 242, 0.9);
+  border: none;
+  border-radius: 0.5rem;
+  padding: 1.2rem 2.4rem;
+
+  position: absolute;
+  top: 80%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.box-back {
+  width: 100%;
+  height: 100%;
+  background-color: #50bfab;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 2.4rem;
+  padding: 0 4.8rem;
+  margin: 0 auto;
+
+  visibility: hidden;
+
+  position: absolute;
+}
+
+.class-title {
+  font-family: "Prata", serif;
+  font-size: 2.4rem;
+  color: #f2f2f2;
+  border-bottom: solid 0.15rem #f2f2f2;
+}
+
+.class-description {
+  font-size: 1.6rem;
+  letter-spacing: 0.05rem;
+  line-height: 1.4;
+  color: #616161;
+}
+
+.class-schedule {
+  display: flex;
+  align-items: center;
+  gap: 3.2rem;
+}
+
+.class-day,
+.class-time {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 0.8rem;
+
+  font-size: 1.4rem;
+  color: #f2f2f2;
+}
+
+/* ************************* */
+/* TESTIMONIALS SECTION */
+/* ************************* */
+.testimonials-section {
+  width: 100vw;
+  padding: 9.6rem 8rem;
+  background-color: #dcf2ee;
+
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  gap: 3.2rem;
+}
+
+.testimonials-header {
+  color: #286056;
+  margin-bottom: 4.8rem;
+}
+
+.testimonials-container {
+  width: 90%;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  align-items: center;
+  gap: 6.4rem;
+  margin: 0 auto;
+}
+
+.testimonial-card {
+  height: 20rem;
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  gap: 2.4rem;
+  background-color: #f2f2f2;
+  padding: 2.4rem;
+  border-radius: 0.5rem;
+  box-shadow: 0.3rem 0.3rem 1rem #286056;
+}
+
+.testimonial-text,
+.teacher-text {
+  font-size: 1.6rem;
+  letter-spacing: 0.05rem;
+  line-height: 1.4;
+  color: #616161;
+}
+
+.customer-profile {
+  display: flex;
+  align-items: center;
+  gap: 2.4rem;
+}
+
+.customer-info {
+  display: flex;
+  flex-direction: column;
+  gap: 0.4rem;
+}
+
+.costumer-pic {
+  width: 7rem;
+  height: 7rem;
+  border-radius: 50%;
+}
+
+.customer-name,
+.teacher-name {
+  font-size: 1.4rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  color: #4d4373;
+}
+
+.customer-profession {
+  font-size: 1.2rem;
+  color: #616161;
+}
+
+/* ************************* */
+/* TEACHERS SECTION */
+/* ************************* */
+
+.teachers-section {
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  gap: 3.2rem;
+
+  padding: 9.6rem 8rem;
+}
+
+.teachers-header {
+  margin-bottom: 4.8rem;
+}
+
+.teachers-container {
+  width: 90%;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  align-items: center;
+  gap: 4.8rem;
+}
+
+.teachers-box {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 2.4rem;
+
+  background-color: #dbd9e3;
+  padding: 2.4rem;
+  border-radius: 0.5rem;
+  box-shadow: 0.3rem 0.3rem 1rem #4d4373;
+}
+
+.teacher-pic {
+  width: 12rem;
+  height: 12rem;
+  border-radius: 50%;
+}
+
+.teacher-social {
+  display: flex;
+  align-items: center;
+  gap: 1.8rem;
+}
+
+.teacher-icon {
+  width: 2.4rem;
+  height: 2.4rem;
+  color: #4d4373;
+  transition: all 0.3s;
+}
+
+.teacher-icon:hover {
+  color: #616161;
+}
+
+/* ************************* */
+/* CTA SECTION */
+/* ************************* */
+
+.cta-section {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  gap: 3.2rem;
+  padding: 9.6rem 8rem;
+
+  background-color: #dbd9e3;
+}
+
+.cta-container {
+  width: 90%;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  align-items: center;
+  gap: 9.6rem;
+
+  margin: 0 auto;
+}
+
+.cta-img {
+  width: 100%;
+}
+
+.cta-form {
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  gap: 2.4rem;
+}
+
+.name,
+.email {
+  width: 40rem;
+  height: 4rem;
+  padding-left: 1.2rem;
+  font-size: 1.6rem;
+
+  border: none;
+  box-shadow: 0.2rem 0.2rem 0.5rem #4d4373;
+}
+
+.name::placeholder,
+.email::placeholder {
+  font-size: 1.6rem;
+  color: #303030;
+}
+
+.classes-selection {
+  display: flex;
+  flex-direction: column;
+  gap: 0.6rem;
+}
+
+.class-selection {
+  font-size: 1.6rem;
+  letter-spacing: 0.05rem;
+  color: #303030;
+}
+
+.choose-class {
+  width: 16rem;
+  height: 4rem;
+  padding-left: 1.2rem;
+  font-size: 1.6rem;
+  border: none;
+  box-shadow: 0.2rem 0.2rem 0.5rem #4d4373;
+}
+
+.form-btn {
+  background-color: #4d4373;
+  color: #f2f2f2;
+  border: none;
+  border-radius: 0.5rem;
+  padding: 1.2rem 2.4rem;
+
+  font-size: 1.8rem;
+  font-weight: 600;
+  letter-spacing: 0.5rem;
+  text-transform: uppercase;
+  cursor: pointer;
+  transition: all 0.3s;
+}
+
+.form-btn:hover {
+  background-color: #3e365c;
+}
+
+/* ************************* */
+/* FOOTER */
+/* ************************* */
+
+.footer {
+  width: 100%;
+  background-color: #286056;
+  padding: 4.8rem 8rem;
+
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  gap: 3.2rem;
+}
+
+.footer-text {
+  font-family: "Prata", serif;
+  font-size: 3.6rem;
+  letter-spacing: 0.2rem;
+  color: #dcf2ee;
+}
+
+.footer-info {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.address {
+  display: flex;
+  flex-direction: column;
+  gap: 0.6rem;
+  font-size: 1.6rem;
+  color: #f2f2f2;
+}
+
+.copyright {
+  width: 100%;
+  text-align: center;
+  font-size: 1.4rem;
+  color: #f2f2f2;
+}
+
+.copyright-link:link,
+.copyright-link:visited {
+  color: #f2f2f2;
+  transition: color 0.5s;
+}
+
+.copyright-link:hover,
+.copyright-link:active {
+  color: #50bfab;
+
+  cursor: pointer;
+}
